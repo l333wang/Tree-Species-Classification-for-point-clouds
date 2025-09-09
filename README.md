@@ -139,6 +139,7 @@ Speed: set --num_workers > 0 if your storage is fast enough; keep 0 on Windows i
 ## Inference and test
 ```bash
 python inference.py --data_path data/modelnet40 --num_category 9 --num_point 1024 --geometric_channel 0 1 2 --feature_channel 3 4 5 6 7 8 --model GTN.3dgtn_cls --vote_times 10 --ckpt log/classification/.../checkpoints/best_oa.pth --output_csv predicted/pred_eval.csv
+```
 
 ---
 ## Citation
