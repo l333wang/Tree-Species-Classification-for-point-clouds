@@ -57,7 +57,16 @@ data/ModelNet40_liked_dataset/
 ```
 - Tree_names.txt: species list (order defines class IDs)
 - train.txt / validate.txt/ test.txt: sample filenames relative to species folders
-- Each .txt contains points with multiple channels (xyz + attributes)
+- Each .txt contains points with multiple channels (xyz + attributes) no header
+  
+```
+#like: x y z nx ny nz attribute1 attribute2 attribute3
+-1.00830587 -0.13363360 -0.11359782 0.16809449 -0.48270576 -0.85949950 0.01413491 0.22723206 0.70960816 
+0.43969413 0.34936640 -3.31659782 0.64334566 0.03696523 -0.76468290 0.00626230 0.03936303 0.09822866 
+0.04369413 -0.02463360 2.92740218 0.02843276 0.80189664 0.59678585 0.00035785 0.02021829 0.07335838 
+2.20269413 0.09536640 -0.92159782 0.64704469 0.06066600 -0.76003474 0.00536769 0.05671855 0.17534443 
+```
+
 ---
 
 ## Installation
