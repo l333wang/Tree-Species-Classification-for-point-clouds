@@ -37,3 +37,28 @@ Requirements (Python ≥ 3.8, PyTorch ≥ 2.0):
 ```bash
 pip install torch torchvision torchaudio
 pip install numpy scipy tqdm prettytable matplotlib pyyaml scikit-learn laspy open3d
+---
+## Citation
+
+Please cite our work if you use this code or method:
+
+@article{Wang2024AACB,
+  title   = {Individual tree species classification using low-density airborne multispectral LiDAR data via attribute-aware cross-branch transformer},
+  author  = {Wang, L. and Lu, D. and Xu, L. and Robinson, D. T. and Tan, W. and Xie, Q. and Li, J.},
+  journal = {Remote Sensing of Environment},
+  volume  = {315},
+  pages   = {114456},
+  year    = {2024}
+}
+---
+## License
+
+This repository is released under the GPL-3.0 License (see LICENSE
+).
+The dataset and any derived data are intended for research and academic use only.
+Commercial use is prohibited.
+---
+## Contact
+
+For questions or collaboration:
+[Lanying Wang] – [lanying.wang@uwaterloo.ca]
