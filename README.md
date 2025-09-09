@@ -90,7 +90,53 @@ pip install numpy scipy tqdm prettytable matplotlib pyyaml scikit-learn laspy op
 ```
 
 ---
+## Training
+Example 1 — TXT dataset (TreeSpeciesCls)
+```bash
+python train.py \
+  --gpu 0 \
+  --dataset TreeSpeciesCls \
+  --data_path data/modelnet40 \
+  --model models.GTN.3dgtn_cls \
+  --num_category 9 \
+  --num_point 1024 \
+  --batch_size 8 \
+  --epoch 200 \
+  --learning_rate 1e-4 \
+  --geometric_channel 0 1 2 \
+  --feature_channel 3 4 5 6 7 8 \
+  --sampling_rate 4 \
+  --log_dir AACB_cls
+```
+# Outputs & Logs
 
+- Logs: log/classification/<log_dir>/logs/train.log
+
+- Checkpoints: log/classification/<log_dir>/checkpoints/
+
+  last.pth (always saved, used for auto-resume)
+
+  best_oa.pth, best_macc.pth, best_f1.pth
+
+# Metrics during training
+
+Overall Accuracy (OA) on training/validation
+
+Precision, reall, and F1 (PrettyTable in logs)
+
+# Notes & Tips
+
+Auto-resume: if last.pth exists in the checkpoint folder, training resumes from it automatically.
+
+Class weights: set --weighted_loss True (default) to mitigate data imbalance.
+
+Channels: make sure your channel indices match the actual data order. Typical geometric channels are 0 1 2 (xyz).
+
+Speed: set --num_workers > 0 if your storage is fast enough; keep 0 on Windows if you hit multiprocessing issues.
+
+
+
+---
 ## Citation
 
 Please cite our work if you use this code or method:
