@@ -37,8 +37,9 @@ Requirements (Python ≥ 3.8, PyTorch ≥ 2.0):
 ```bash
 pip install torch torchvision torchaudio
 pip install numpy scipy tqdm prettytable matplotlib pyyaml scikit-learn laspy open3d
----
 
+
+---
 
 ## Citation
 
