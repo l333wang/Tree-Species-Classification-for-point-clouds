@@ -42,6 +42,7 @@ project/
 ---
 
 ## Dataset Layout
+txt-based dataset (ModelNet40 liked structure)
 ```bash
 data/ModelNet40_liked_dataset/
 ├─ Tree_names.txt
@@ -67,6 +68,16 @@ data/ModelNet40_liked_dataset/
 2.20269413 0.09536640 -0.92159782 0.64704469 0.06066600 -0.76003474 0.00536769 0.05671855 0.17534443 
 ```
 
+NPY-based dataset with split subfolders
+```
+ root/
+          ├─ train/
+          │   ├─ points/*.npy   # each (N, C_total)
+          │   └─ labels.npy     # (num_samples,)
+          └─ validate/
+              ├─ points/*.npy
+              └─ labels.npy
+```
 ---
 
 ## Installation
