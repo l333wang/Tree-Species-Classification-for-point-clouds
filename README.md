@@ -83,13 +83,14 @@ Please cite our work if you use this code or method:
   pages   = {114456},
   year    = {2024}
 }
+
 ---
 ## License
 
-This repository is released under the GPL-3.0 License (see LICENSE
-).
+This repository is released under the GPL-3.0 License (see LICENSE).
 The dataset and any derived data are intended for research and academic use only.
 Commercial use is prohibited.
+
 ---
 ## Contact
 
