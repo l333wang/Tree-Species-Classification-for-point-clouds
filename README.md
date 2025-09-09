@@ -35,8 +35,9 @@ project/
 ├─ ErrorMatrix.py # confusion matrix (OA, mAcc, F1, PrettyTable output)
 ├─ provider.py # data augmentation utilities
 ├─ models/ # AACB and baseline models
-    ├─
-    ├─
+    ├─AACBT
+    ├─GTN
+    ├─ ...
 └─ data/ # dataset root (see Dataset Layout)
 ```
 ---
