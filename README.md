@@ -26,6 +26,7 @@ We propose the **Attribute-Aware Cross-Branch Transformer (AACB)** — a dual-br
 ---
 
 ## Repository Structure
+```bash
 project/
 ├─ train.py # training & validation (saves best_oa / best_macc / best_f1)
 ├─ inference.py # batch inference with --vote_times & resume support
@@ -37,12 +38,12 @@ project/
     ├─
     ├─
 └─ data/ # dataset root (see Dataset Layout)
-
+```
 ---
 
 ## Dataset Layout
 ```bash
-data/n32_NGS_fps_4096_npy/
+data/ModelNet40_liked_dataset/
 ├─ Tree_names.txt
 ├─ train.txt
 ├─ validate.txt
