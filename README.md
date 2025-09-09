@@ -31,7 +31,7 @@ project/
 ├─ train.py # training & validation (saves best_oa / best_macc / best_f1)
 ├─ inference.py # batch inference with --vote_times & resume support
 ├─ data_util
-    └─ModelNetDataLoader.py # dataset loaders ()
+    └─DataLoader.py # dataset loaders ()
 ├─ ErrorMatrix.py # confusion matrix (OA, mAcc, F1, PrettyTable output)
 ├─ provider.py # data augmentation utilities
 ├─ models/ # AACB and baseline models
