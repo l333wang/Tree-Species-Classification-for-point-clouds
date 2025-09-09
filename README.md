@@ -108,7 +108,7 @@ python train.py \
   --sampling_rate 4 \
   --log_dir AACB_cls
 ```
-# Outputs & Logs
+### Outputs & Logs
 
 - Logs: log/classification/<log_dir>/logs/train.log
 
@@ -118,13 +118,13 @@ python train.py \
 
   best_oa.pth, best_macc.pth, best_f1.pth
 
-# Metrics during training
+### Metrics during training
 
 Overall Accuracy (OA) on training/validation
 
 Precision, reall, and F1 (PrettyTable in logs)
 
-# Notes & Tips
+### Notes & Tips
 
 Auto-resume: if last.pth exists in the checkpoint folder, training resumes from it automatically.
 
