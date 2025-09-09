@@ -41,7 +41,7 @@ project/
 ---
 
 ## Dataset Layout
-
+```bash
 data/n32_NGS_fps_4096_npy/
 ├─ Tree_names.txt
 ├─ train.txt
@@ -53,10 +53,10 @@ data/n32_NGS_fps_4096_npy/
 ├─ EucalyptusMiniata/
 │  └─ ...
 └─ ...
-
--Tree_names.txt: species list (order defines class IDs)
--train.txt / validate.txt/ test.txt: sample filenames relative to species folders
--Each .txt contains points with multiple channels (xyz + attributes)
+```
+- Tree_names.txt: species list (order defines class IDs)
+- train.txt / validate.txt/ test.txt: sample filenames relative to species folders
+- Each .txt contains points with multiple channels (xyz + attributes)
 ---
 
 ## Installation
