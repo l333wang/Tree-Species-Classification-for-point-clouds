@@ -1,7 +1,7 @@
 # Tree-Species-Classification-for-point-clouds
 This repo aimed to present the Attribute-Aware Cross-Branch Transformer (AACB) for Individual Tree Species Classification and more widely used models for point clouds in tree species classification including PointNet, PointNet++, PT, PCT, and 3DGTN.
 
-# Attribute-Aware Cross-Branch Transformer (AACB) for Individual Tree Species Classification
+## Attribute-Aware Cross-Branch Transformer (AACB) for Individual Tree Species Classification
 
 > Official implementation of:  
 > **Wang, L., Lu, D., Xu, L., Robinson, D. T., Tan, W., Xie, Q., … & Li, J. (2024). Individual tree species classification using low-density airborne multispectral LiDAR data via attribute-aware cross-branch transformer. _Remote Sensing of Environment_, 315, 114456.**
