@@ -26,8 +26,37 @@ We propose the **Attribute-Aware Cross-Branch Transformer (AACB)** — a dual-br
 ---
 
 ## Repository Structure
+project/
+├─ train.py # training & validation (saves best_oa / best_macc / best_f1)
+├─ inference.py # batch inference with --vote_times & resume support
+├─ data_util
+    └─ModelNetDataLoader.py # dataset loaders ()
+├─ ErrorMatrix.py # confusion matrix (OA, mAcc, F1, PrettyTable output)
+├─ provider.py # data augmentation utilities
+├─ models/ # AACB and baseline models
+    ├─
+    ├─
+└─ data/ # dataset root (see Dataset Layout)
 
+---
 
+## Dataset Layout
+
+data/n32_NGS_fps_4096_npy/
+├─ Tree_names.txt
+├─ train.txt
+├─ validate.txt
+├─ test.txt
+├─ AbiesAlba/
+│  ├─ AbiesAlba_3021.txt
+│  └─ ...
+├─ EucalyptusMiniata/
+│  └─ ...
+└─ ...
+
+-Tree_names.txt: species list (order defines class IDs)
+-train.txt / validate.txt/ test.txt: sample filenames relative to species folders
+-Each .txt contains points with multiple channels (xyz + attributes)
 ---
 
 ## Installation
@@ -37,7 +66,7 @@ Requirements (Python ≥ 3.8, PyTorch ≥ 2.0):
 ```bash
 pip install torch torchvision torchaudio
 pip install numpy scipy tqdm prettytable matplotlib pyyaml scikit-learn laspy open3d
-
+```
 
 ---
 
